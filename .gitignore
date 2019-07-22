@@ -2,3 +2,5 @@
 .DS_Store
 *.0_x4
 lock.json
+terraform.tfstate
+terraform.tfstate.backup
