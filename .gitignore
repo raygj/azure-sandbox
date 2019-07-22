@@ -1,2 +1,4 @@
 
 .DS_Store
+*.0_x4
+lock.json
