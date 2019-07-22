@@ -16,7 +16,7 @@ resource "azurerm_storage_account" "main" {
 }
 
 resource "azurerm_storage_share" "main" {
-  name                 = "${username.share}"
+  name                 = "aci-test-share"
   resource_group_name  = "${azurerm_resource_group.main.name}"
   storage_account_name = "${azurerm_storage_account.main.name}"
   quota                = 1
@@ -61,7 +61,5 @@ resource "azurerm_container_group" "main" {
 
   tags {
     environment = "testing"
-    owner = "jray@hashicorp.com"
-    ttl = "1"
   }
 }
